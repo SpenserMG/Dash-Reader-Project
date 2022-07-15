@@ -1,0 +1,80 @@
+:root {
+  --main-bg-color: #E8F2FF;
+  --acc-secondary-color: #E6D8BA;
+  --acc-primary-color: #FFC939;
+  --font-color: #544F42;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: atk-hl;
+  color: var(--font-color);
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  background: var(--main-bg-color);
+}
+
+@font-face {
+  font-family: oda;
+  src: url("static/fonts/ODA-all/OpenDyslexic-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: arvo;
+  src: url("static/fonts/ARVO-all/Arvo-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: atk-hl;
+  src: url("static/fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: atk-hl;
+  src: url("static/fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: atk-hl;
+  src: url("static/fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: atk-hl;
+  src: url("static/fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+.hamburger {
+  background: rgb(255, 255, 255);
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--font-color) !important;
+  transform: translate(1.5em, -0.25em);
+}
+
+.hamburger-expand-div {
+  background: rgba(255, 255, 255, 0.537);
+  border-radius: 1em;
+  padding: 0.5em;
+  text-align: right;
+  width: max-content;
+}
+
+.hamburger-expand-container.show, .hamburger-expand-container.collapsing  {
+  display: flex;
+  justify-content: flex-end;
+}
