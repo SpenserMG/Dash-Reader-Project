@@ -39,12 +39,14 @@
   transition: .5s;
   background-color: rgb(58, 65, 21);
   color: white;
-}
-
-.reader-select:focus {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
+
+/* .reader-select:focus {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+} */
 
 option {
   border: none;
